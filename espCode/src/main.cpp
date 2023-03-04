@@ -1,5 +1,11 @@
 #include <Adafruit_MLX90640.h>
 #include <I2CManagement.hpp>
+#include <sstream>
+#include <math.h>
+#include <memory>
+#include <string>
+#include <stdexcept>
+#include <esp_task_wdt.h>
 
 Adafruit_MLX90640 mlx;
 float frame[32*24]; // buffer for full frame of temperatures
@@ -8,88 +14,52 @@ float frame[32*24]; // buffer for full frame of temperatures
 #define PRINT_TEMPERATURES
 //#define PRINT_ASCIIART
 
+template<typename ... Args>
+std::string string_format( const std::string& format, Args ... args )
+{
+    int size_s = std::snprintf( nullptr, 0, format.c_str(), args ... ) + 1; // Extra space for '\0'
+    if( size_s <= 0 ){ throw std::runtime_error( "Error during formatting." ); }
+    auto size = static_cast<size_t>( size_s );
+    std::unique_ptr<char[]> buf( new char[ size ] );
+    std::snprintf( buf.get(), size, format.c_str(), args ... );
+    return std::string( buf.get(), buf.get() + size - 1 ); // We don't want the '\0' inside
+}
+
 
 void setup(){
+  esp_task_wdt_delete(NULL);
   Serial.begin(460800);
   Serial.setTimeout(0);
-  //Serial.println("Adafruit MLX90640 Simple Test");
   I2CManager::Setup(6, 7);
-  I2CManager::scanAll();
-  Serial.println("Adafruit MLX90640 Simple Test");
+  //I2CManager::scanAll();
   if (! mlx.begin(MLX90640_I2CADDR_DEFAULT, &Wire)) {
-    Serial.println("MLX90640 not found!");
     while (1) delay(10);
   }
-  Serial.println("Found Adafruit MLX90640");
-
-  Serial.print("Serial number: ");
-  Serial.print(mlx.serialNumber[0], HEX);
-  Serial.print(mlx.serialNumber[1], HEX);
-  Serial.println(mlx.serialNumber[2], HEX);
-  
-  //mlx.setMode(MLX90640_INTERLEAVED);
   mlx.setMode(MLX90640_CHESS); 
-  Serial.print("Current mode: ");
-  if (mlx.getMode() == MLX90640_CHESS) {
-    Serial.println("Chess");
-  } else {
-    Serial.println("Interleave");    
-  }
-
   mlx.setResolution(MLX90640_ADC_16BIT);
-  Serial.print("Current resolution: ");
   mlx90640_resolution_t res = mlx.getResolution();
-  switch (res) {
-    case MLX90640_ADC_16BIT: Serial.println("16 bit"); break;
-    case MLX90640_ADC_17BIT: Serial.println("17 bit"); break;
-    case MLX90640_ADC_18BIT: Serial.println("18 bit"); break;
-    case MLX90640_ADC_19BIT: Serial.println("19 bit"); break;
-  }
-
   mlx.setRefreshRate(MLX90640_8_HZ);
-  Serial.print("Current frame rate: ");
   mlx90640_refreshrate_t rate = mlx.getRefreshRate();
-  switch (rate) {
-    case MLX90640_0_5_HZ: Serial.println("0.5 Hz"); break;
-    case MLX90640_1_HZ: Serial.println("1 Hz"); break; 
-    case MLX90640_2_HZ: Serial.println("2 Hz"); break;
-    case MLX90640_4_HZ: Serial.println("4 Hz"); break;
-    case MLX90640_8_HZ: Serial.println("8 Hz"); break;
-    case MLX90640_16_HZ: Serial.println("16 Hz"); break;
-    case MLX90640_32_HZ: Serial.println("32 Hz"); break;
-    case MLX90640_64_HZ: Serial.println("64 Hz"); break;
-  }
   Wire.setClock(2000000);
 }
 
 void loop(){
+  char command = 0;
+  while (command != '@') { // Wait for the PC to send a '1' command
+    while(Serial.available() == 0){delay(1);}
+    command = Serial.read();
+  }
+  Serial.flush();
   if (mlx.getFrame(frame) != 0) {
-    Serial.println("Failed");
     return;
   }
-  Serial.println('?');
+  std::stringstream k;
   for (uint8_t h=0; h<24; h++) {
     for (uint8_t w=0; w<32; w++) {
       float t = frame[h*32 + w];
-#ifdef PRINT_TEMPERATURES
-      Serial.print(t, 1);
-      Serial.print("|");
-#endif
-#ifdef PRINT_ASCIIART
-      char c = '&';
-      if (t < 20) c = ' ';
-      else if (t < 23) c = '.';
-      else if (t < 25) c = '-';
-      else if (t < 27) c = '*';
-      else if (t < 29) c = '+';
-      else if (t < 31) c = 'x';
-      else if (t < 33) c = '%';
-      else if (t < 35) c = '#';
-      else if (t < 37) c = 'X';
-      Serial.print(c);
-#endif
+      k << std::to_string(t) << "|";
     }
-    Serial.println();
   }
-  Serial.println('!');
+  k << "@";
+  Serial.print(k.str().c_str());
 }
