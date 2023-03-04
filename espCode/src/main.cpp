@@ -38,7 +38,7 @@ void setup(){
   mlx.setMode(MLX90640_CHESS); 
   mlx.setResolution(MLX90640_ADC_16BIT);
   mlx90640_resolution_t res = mlx.getResolution();
-  mlx.setRefreshRate(MLX90640_8_HZ);
+  mlx.setRefreshRate(MLX90640_16_HZ);
   mlx90640_refreshrate_t rate = mlx.getRefreshRate();
   Wire.setClock(2000000);
 }
