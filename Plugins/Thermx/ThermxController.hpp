@@ -4,13 +4,20 @@ class ThermxController : public SerialDevice{
     protected:
             float out_buf[24][32];
             ThermxRenderer* _trx;
+            vector<float> treated;
     public:
-        ThermxController(ThermxRenderer* trx) : SerialDevice("/dev/ttyACM"), _trx(trx){
+        ThermxController(ThermxRenderer* trx) : SerialDevice("ttyACM"){
+            _trx = trx;
             ic = new IdentifiyCommand(this);
             this->_tagidentifier = "821ce9ba-a697-487b-a402-32e29b9d599d";
             this->_displayName = "thermal camera module";
             this->_baudrate = 460800;
+            this->workDelayMs = 1000/16;
         }
+
+        void doPortWork() override{
+            getData();
+            }
 
         void getData();
 };

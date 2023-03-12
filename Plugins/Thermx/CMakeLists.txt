@@ -8,8 +8,12 @@ set(thermx_src
     ThermxRenderer.cpp
     Factory.cpp
 )
-
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY /home/kanken/code/AHRS_core/src/plugins/)
+#SET(GCC_COVERAGE_COMPILE_FLAGS "-fsanitize=undefined,address")
+#SET(GCC_COVERAGE_LINK_FLAGS    "-fsanitize=undefined,address")
+
+#SET(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} ${GCC_COVERAGE_COMPILE_FLAGS}")
+#SET(CMAKE_EXE_LINKER_FLAGS  "${CMAKE_EXE_LINKER_FLAGS} ${GCC_COVERAGE_LINK_FLAGS}")
 
 find_package( OpenCV REQUIRED )
 find_package(OpenGL REQUIRED)

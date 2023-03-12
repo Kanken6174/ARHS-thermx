@@ -200,6 +200,9 @@ CMakeFiles/thermix.dir/Factory.cpp.o
  /usr/include/c++/11/bits/invoke.h
  /usr/include/c++/11/bits/stl_multimap.h
  /usr/include/c++/11/bits/erase_if.h
+ /usr/include/c++/11/atomic
+ /usr/include/c++/11/bits/atomic_base.h
+ /usr/include/c++/11/bits/atomic_lockfree_defines.h
  /home/kanken/code/AHRS_core/src/model/hardware/hw/serial.hpp
  /usr/include/string.h
  /usr/include/strings.h
@@ -352,8 +355,6 @@ CMakeFiles/thermix.dir/Factory.cpp.o
  /usr/include/c++/11/bits/align.h
  /usr/include/c++/11/bit
  /usr/include/c++/11/bits/shared_ptr_atomic.h
- /usr/include/c++/11/bits/atomic_base.h
- /usr/include/c++/11/bits/atomic_lockfree_defines.h
  /usr/include/c++/11/backward/auto_ptr.h
  /usr/include/c++/11/pstl/glue_memory_defs.h
  /usr/local/include/opencv4/opencv2/core/neon_utils.hpp
@@ -378,7 +379,6 @@ CMakeFiles/thermix.dir/Factory.cpp.o
  /usr/local/include/opencv4/opencv2/core/optim.hpp
  /usr/local/include/opencv4/opencv2/core/ovx.hpp
  /usr/local/include/opencv4/opencv2/core/cvdef.h
- /usr/include/c++/11/atomic
  /home/kanken/code/AHRS_core/src/model/perfcheckers/framerate.hpp
  /home/kanken/code/AHRS_core/src/model/controllers/ui/uiController.hpp
  /home/kanken/code/AHRS_core/src/model/hardware/cameras/_cam.hpp
@@ -849,6 +849,9 @@ CMakeFiles/thermix.dir/ThermxController.cpp.o
  /usr/include/c++/11/bits/invoke.h
  /usr/include/c++/11/bits/stl_multimap.h
  /usr/include/c++/11/bits/erase_if.h
+ /usr/include/c++/11/atomic
+ /usr/include/c++/11/bits/atomic_base.h
+ /usr/include/c++/11/bits/atomic_lockfree_defines.h
  /home/kanken/code/AHRS_core/src/model/hardware/hw/serial.hpp
  /usr/include/string.h
  /usr/include/strings.h
@@ -1001,8 +1004,6 @@ CMakeFiles/thermix.dir/ThermxController.cpp.o
  /usr/include/c++/11/bits/align.h
  /usr/include/c++/11/bit
  /usr/include/c++/11/bits/shared_ptr_atomic.h
- /usr/include/c++/11/bits/atomic_base.h
- /usr/include/c++/11/bits/atomic_lockfree_defines.h
  /usr/include/c++/11/backward/auto_ptr.h
  /usr/include/c++/11/pstl/glue_memory_defs.h
  /usr/local/include/opencv4/opencv2/core/neon_utils.hpp
@@ -1027,7 +1028,6 @@ CMakeFiles/thermix.dir/ThermxController.cpp.o
  /usr/local/include/opencv4/opencv2/core/optim.hpp
  /usr/local/include/opencv4/opencv2/core/ovx.hpp
  /usr/local/include/opencv4/opencv2/core/cvdef.h
- /usr/include/c++/11/atomic
  /home/kanken/code/AHRS_core/src/model/perfcheckers/framerate.hpp
  /home/kanken/code/AHRS_core/src/model/controllers/ui/uiController.hpp
  /home/kanken/code/AHRS_core/src/model/hardware/cameras/_cam.hpp

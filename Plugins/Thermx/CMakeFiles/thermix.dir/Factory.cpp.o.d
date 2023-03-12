@@ -160,7 +160,9 @@ CMakeFiles/thermix.dir/Factory.cpp.o: \
  /usr/include/c++/11/array /usr/include/c++/11/bits/uses_allocator.h \
  /usr/include/c++/11/bits/invoke.h \
  /usr/include/c++/11/bits/stl_multimap.h \
- /usr/include/c++/11/bits/erase_if.h \
+ /usr/include/c++/11/bits/erase_if.h /usr/include/c++/11/atomic \
+ /usr/include/c++/11/bits/atomic_base.h \
+ /usr/include/c++/11/bits/atomic_lockfree_defines.h \
  /home/kanken/code/ARHS-Thermx/Plugins/Thermx/../../../AHRS_core/src/model/hardware/hw/extendables/../serial.hpp \
  /usr/include/string.h /usr/include/strings.h /usr/include/c++/11/thread \
  /usr/include/c++/11/bits/std_thread.h /usr/include/c++/11/bits/refwrap.h \
@@ -284,8 +286,6 @@ CMakeFiles/thermix.dir/Factory.cpp.o: \
  /usr/include/c++/11/bits/stl_raw_storage_iter.h \
  /usr/include/c++/11/bits/align.h /usr/include/c++/11/bit \
  /usr/include/c++/11/bits/shared_ptr_atomic.h \
- /usr/include/c++/11/bits/atomic_base.h \
- /usr/include/c++/11/bits/atomic_lockfree_defines.h \
  /usr/include/c++/11/backward/auto_ptr.h \
  /usr/include/c++/11/pstl/glue_memory_defs.h \
  /usr/local/include/opencv4/opencv2/core/neon_utils.hpp \
@@ -309,7 +309,6 @@ CMakeFiles/thermix.dir/Factory.cpp.o: \
  /usr/local/include/opencv4/opencv2/core/optim.hpp \
  /usr/local/include/opencv4/opencv2/core/ovx.hpp \
  /usr/local/include/opencv4/opencv2/core/cvdef.h \
- /usr/include/c++/11/atomic \
  /home/kanken/code/ARHS-Thermx/Plugins/Thermx/../../../AHRS_core/src/pipeline/abstract/../../model/perfcheckers/framerate.hpp \
  /home/kanken/code/ARHS-Thermx/Plugins/Thermx/../../../AHRS_core/src/pipeline/abstract/../../model/controllers/ui/uiController.hpp \
  /home/kanken/code/ARHS-Thermx/Plugins/Thermx/../../../AHRS_core/src/pipeline/abstract/../../model/controllers/ui/../../hardware/cameras/_cam.hpp \

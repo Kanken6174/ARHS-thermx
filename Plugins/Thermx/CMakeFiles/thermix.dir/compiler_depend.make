@@ -199,6 +199,9 @@ CMakeFiles/thermix.dir/Factory.cpp.o: Factory.cpp \
   /usr/include/c++/11/bits/invoke.h \
   /usr/include/c++/11/bits/stl_multimap.h \
   /usr/include/c++/11/bits/erase_if.h \
+  /usr/include/c++/11/atomic \
+  /usr/include/c++/11/bits/atomic_base.h \
+  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
   /home/kanken/code/AHRS_core/src/model/hardware/hw/serial.hpp \
   /usr/include/string.h \
   /usr/include/strings.h \
@@ -351,8 +354,6 @@ CMakeFiles/thermix.dir/Factory.cpp.o: Factory.cpp \
   /usr/include/c++/11/bits/align.h \
   /usr/include/c++/11/bit \
   /usr/include/c++/11/bits/shared_ptr_atomic.h \
-  /usr/include/c++/11/bits/atomic_base.h \
-  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
   /usr/include/c++/11/backward/auto_ptr.h \
   /usr/include/c++/11/pstl/glue_memory_defs.h \
   /usr/local/include/opencv4/opencv2/core/neon_utils.hpp \
@@ -377,7 +378,6 @@ CMakeFiles/thermix.dir/Factory.cpp.o: Factory.cpp \
   /usr/local/include/opencv4/opencv2/core/optim.hpp \
   /usr/local/include/opencv4/opencv2/core/ovx.hpp \
   /usr/local/include/opencv4/opencv2/core/cvdef.h \
-  /usr/include/c++/11/atomic \
   /home/kanken/code/AHRS_core/src/model/perfcheckers/framerate.hpp \
   /home/kanken/code/AHRS_core/src/model/controllers/ui/uiController.hpp \
   /home/kanken/code/AHRS_core/src/model/hardware/cameras/_cam.hpp \
@@ -847,6 +847,9 @@ CMakeFiles/thermix.dir/ThermxController.cpp.o: ThermxController.cpp \
   /usr/include/c++/11/bits/invoke.h \
   /usr/include/c++/11/bits/stl_multimap.h \
   /usr/include/c++/11/bits/erase_if.h \
+  /usr/include/c++/11/atomic \
+  /usr/include/c++/11/bits/atomic_base.h \
+  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
   /home/kanken/code/AHRS_core/src/model/hardware/hw/serial.hpp \
   /usr/include/string.h \
   /usr/include/strings.h \
@@ -999,8 +1002,6 @@ CMakeFiles/thermix.dir/ThermxController.cpp.o: ThermxController.cpp \
   /usr/include/c++/11/bits/align.h \
   /usr/include/c++/11/bit \
   /usr/include/c++/11/bits/shared_ptr_atomic.h \
-  /usr/include/c++/11/bits/atomic_base.h \
-  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
   /usr/include/c++/11/backward/auto_ptr.h \
   /usr/include/c++/11/pstl/glue_memory_defs.h \
   /usr/local/include/opencv4/opencv2/core/neon_utils.hpp \
@@ -1025,7 +1026,6 @@ CMakeFiles/thermix.dir/ThermxController.cpp.o: ThermxController.cpp \
   /usr/local/include/opencv4/opencv2/core/optim.hpp \
   /usr/local/include/opencv4/opencv2/core/ovx.hpp \
   /usr/local/include/opencv4/opencv2/core/cvdef.h \
-  /usr/include/c++/11/atomic \
   /home/kanken/code/AHRS_core/src/model/perfcheckers/framerate.hpp \
   /home/kanken/code/AHRS_core/src/model/controllers/ui/uiController.hpp \
   /home/kanken/code/AHRS_core/src/model/hardware/cameras/_cam.hpp \
@@ -2058,12 +2058,6 @@ ThermxController.cpp:
 
 /usr/local/include/opencv4/opencv2/flann/defines.h:
 
-ThermxRenderer.hpp:
-
-/usr/local/include/opencv4/opencv2/core/cuda.inl.hpp:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/immintrin.h:
-
 /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h:
 
 /usr/include/c++/11/bits/fs_fwd.h:
@@ -2208,11 +2202,9 @@ ThermxRenderer.hpp:
 
 /usr/include/c++/11/bits/exception.h:
 
-/usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h:
-
-/usr/include/c++/11/bits/basic_ios.h:
-
 /usr/include/c++/11/bits/uniform_int_dist.h:
+
+/usr/include/c++/11/bits/atomic_lockfree_defines.h:
 
 /usr/include/c++/11/bits/stl_iterator_base_funcs.h:
 
@@ -2404,6 +2396,8 @@ ThermxRenderer.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
 
+/usr/lib/gcc/x86_64-linux-gnu/11/include/adxintrin.h:
+
 /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h:
 
 /home/kanken/code/AHRS_core/src/model/patterns/commands/commands.hpp:
@@ -2562,6 +2556,10 @@ ThermxRenderer.cpp:
 
 /usr/include/oneapi/tbb/detail/_utils.h:
 
+/usr/include/c++/11/bits/atomic_base.h:
+
+/home/kanken/code/AHRS_core/src/model/hardware/hw/extendables/Device.hpp:
+
 /usr/include/c++/11/bits/stl_function.h:
 
 /usr/local/include/opencv4/opencv2/core/cvstd.inl.hpp:
@@ -2698,8 +2696,6 @@ ThermxRenderer.cpp:
 
 /usr/include/pthread.h:
 
-/usr/include/c++/11/bits/locale_facets_nonio.tcc:
-
 /usr/include/c++/11/bits/stl_pair.h:
 
 /usr/include/c++/11/ext/atomicity.h:
@@ -2720,12 +2716,6 @@ ThermxRenderer.cpp:
 
 /usr/include/c++/11/ext/new_allocator.h:
 
-/usr/include/c++/11/bits/char_traits.h:
-
-/usr/include/libintl.h:
-
-/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
-
 /usr/include/c++/11/bits/locale_facets.h:
 
 /usr/include/tbb/parallel_reduce.h:
@@ -2739,6 +2729,24 @@ ThermxRenderer.cpp:
 /usr/include/c++/11/fstream:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/fxsrintrin.h:
+
+/usr/include/c++/11/bits/basic_ios.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h:
+
+ThermxRenderer.hpp:
+
+/usr/local/include/opencv4/opencv2/core/cuda.inl.hpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/immintrin.h:
+
+/usr/include/c++/11/bits/char_traits.h:
+
+/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
+
+/usr/include/libintl.h:
+
+/usr/include/c++/11/bits/locale_facets_nonio.tcc:
 
 /usr/include/c++/11/bits/locale_conv.h:
 
@@ -2904,12 +2912,6 @@ ThermxRenderer.cpp:
 
 /usr/include/c++/11/bits/regex.h:
 
-/home/kanken/code/AHRS_core/src/model/hardware/hw/extendables/Device.hpp:
-
-/usr/include/c++/11/bits/atomic_base.h:
-
-/usr/include/c++/11/bits/atomic_lockfree_defines.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
 
 /usr/include/c++/11/backward/auto_ptr.h:
@@ -2947,8 +2949,6 @@ ThermxRenderer.cpp:
 /usr/local/include/opencv4/opencv2/core/ovx.hpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vpopcntdqintrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/adxintrin.h:
 
 /home/kanken/code/AHRS_core/src/model/perfcheckers/framerate.hpp:
 
