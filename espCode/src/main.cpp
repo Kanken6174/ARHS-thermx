@@ -48,6 +48,8 @@ void loop(){
   while (command != '@') { // Wait for the PC to send a '1' command
     while(Serial.available() == 0){delay(1);}
     command = Serial.read();
+    if(command == '$')
+      Serial.println("821ce9ba-a697-487b-a402-32e29b9d599d");
   }
   Serial.flush();
   if (mlx.getFrame(frame) != 0) {

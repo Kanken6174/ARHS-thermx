@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/kanken/code/ARHS-Thermx/Plugins/Thermx/build",
+  "command": "/usr/bin/c++ -Dthermix_EXPORTS -isystem /usr/local/include/opencv4 -g -fPIC -o CMakeFiles/thermix.dir/ThermxController.cpp.o -c /home/kanken/code/ARHS-Thermx/Plugins/Thermx/ThermxController.cpp",
+  "file": "/home/kanken/code/ARHS-Thermx/Plugins/Thermx/ThermxController.cpp"
+},
+{
+  "directory": "/home/kanken/code/ARHS-Thermx/Plugins/Thermx/build",
+  "command": "/usr/bin/c++ -Dthermix_EXPORTS -isystem /usr/local/include/opencv4 -g -fPIC -o CMakeFiles/thermix.dir/ThermxRenderer.cpp.o -c /home/kanken/code/ARHS-Thermx/Plugins/Thermx/ThermxRenderer.cpp",
+  "file": "/home/kanken/code/ARHS-Thermx/Plugins/Thermx/ThermxRenderer.cpp"
+},
+{
+  "directory": "/home/kanken/code/ARHS-Thermx/Plugins/Thermx/build",
+  "command": "/usr/bin/c++ -Dthermix_EXPORTS -isystem /usr/local/include/opencv4 -g -fPIC -o CMakeFiles/thermix.dir/Factory.cpp.o -c /home/kanken/code/ARHS-Thermx/Plugins/Thermx/Factory.cpp",
+  "file": "/home/kanken/code/ARHS-Thermx/Plugins/Thermx/Factory.cpp"
+}
+]

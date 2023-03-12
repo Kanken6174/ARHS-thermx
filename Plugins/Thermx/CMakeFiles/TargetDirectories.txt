@@ -1,0 +1,3 @@
+/home/kanken/code/ARHS-Thermx/Plugins/Thermx/CMakeFiles/thermix.dir
+/home/kanken/code/ARHS-Thermx/Plugins/Thermx/CMakeFiles/edit_cache.dir
+/home/kanken/code/ARHS-Thermx/Plugins/Thermx/CMakeFiles/rebuild_cache.dir
