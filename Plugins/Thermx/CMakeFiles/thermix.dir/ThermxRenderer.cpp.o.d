@@ -537,27 +537,10 @@ CMakeFiles/thermix.dir/ThermxRenderer.cpp.o: \
  /usr/include/c++/11/typeindex \
  /home/kanken/code/ARHS-Thermx/Plugins/Thermx/../../../AHRS_core/src/pipeline/abstract/../../model/controllers/ui/menu.hpp \
  /home/kanken/code/ARHS-Thermx/Plugins/Thermx/../../../AHRS_core/src/pipeline/abstract/../../model/controllers/ui/menuItem.hpp \
- /home/kanken/code/ARHS-Thermx/Plugins/Thermx/../../../AHRS_core/src/pipeline/abstract/../../model/controllers/ui/./../../hardware/hw/serial.hpp \
- /usr/local/include/CppLinuxSerial/SerialPort.hpp \
- /usr/include/c++/11/fstream \
- /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
- /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
- /usr/include/c++/11/bits/fstream.tcc \
- /usr/include/x86_64-linux-gnu/asm/ioctls.h \
- /usr/include/asm-generic/ioctls.h /usr/include/linux/ioctl.h \
- /usr/include/x86_64-linux-gnu/asm/ioctl.h \
- /usr/include/asm-generic/ioctl.h \
- /usr/include/x86_64-linux-gnu/asm/termbits.h \
- /usr/include/asm-generic/termbits.h /usr/include/linux/posix_types.h \
- /usr/include/linux/stddef.h \
- /usr/include/x86_64-linux-gnu/asm/posix_types.h \
- /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
- /usr/include/asm-generic/posix_types.h \
- /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
- /usr/include/asm-generic/bitsperlong.h \
- /usr/local/include/CppLinuxSerial/Exception.hpp \
+ /home/kanken/code/ARHS-Thermx/Plugins/Thermx/../../../AHRS_core/src/pipeline/abstract/../../model/controllers/ui/./../../hardware/hw/inputManager.hpp \
  /home/kanken/code/ARHS-Thermx/Plugins/Thermx/../../../AHRS_core/src/pipeline/abstract/../../model/controllers/ui/./../../hardware/hw/../../patterns/observer/observable.hpp \
  /home/kanken/code/ARHS-Thermx/Plugins/Thermx/../../../AHRS_core/src/pipeline/abstract/../../model/controllers/ui/./../../hardware/hw/../../patterns/observer/observer.hpp \
+ /home/kanken/code/ARHS-Thermx/Plugins/Thermx/../../../AHRS_core/src/pipeline/abstract/../../model/controllers/ui/./../../hardware/hw/inputKeys.hpp \
  /home/kanken/code/ARHS-Thermx/Plugins/Thermx/../../../AHRS_core/src/pipeline/abstract/../../model/controllers/ui/../../hardware/psvr/_psvr.hpp \
  /home/kanken/code/ARHS-Thermx/Plugins/Thermx/../../../AHRS_core/src/pipeline/abstract/../../model/controllers/ui/../../hardware/psvr/../ihidapi/_hidapi.hpp \
  /usr/local/include/hidapi/hidapi.h \

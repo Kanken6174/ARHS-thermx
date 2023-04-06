@@ -202,7 +202,7 @@ CMakeFiles/thermix.dir/Factory.cpp.o: Factory.cpp \
   /usr/include/c++/11/atomic \
   /usr/include/c++/11/bits/atomic_base.h \
   /usr/include/c++/11/bits/atomic_lockfree_defines.h \
-  /home/kanken/code/AHRS_core/src/model/hardware/hw/serial.hpp \
+  /home/kanken/code/AHRS_core/src/model/hardware/hw/inputManager.hpp \
   /usr/include/string.h \
   /usr/include/strings.h \
   /usr/include/c++/11/thread \
@@ -220,29 +220,9 @@ CMakeFiles/thermix.dir/Factory.cpp.o: Factory.cpp \
   /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/vector.tcc \
-  /usr/local/include/CppLinuxSerial/SerialPort.hpp \
-  /usr/include/c++/11/fstream \
-  /usr/include/c++/11/bits/codecvt.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
-  /usr/include/c++/11/bits/fstream.tcc \
-  /usr/include/c++/11/sstream \
-  /usr/include/c++/11/bits/sstream.tcc \
-  /usr/include/x86_64-linux-gnu/asm/ioctls.h \
-  /usr/include/asm-generic/ioctls.h \
-  /usr/include/linux/ioctl.h \
-  /usr/include/x86_64-linux-gnu/asm/ioctl.h \
-  /usr/include/asm-generic/ioctl.h \
-  /usr/include/x86_64-linux-gnu/asm/termbits.h \
-  /usr/include/asm-generic/termbits.h \
-  /usr/include/linux/posix_types.h \
-  /usr/include/linux/stddef.h \
-  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
-  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
-  /usr/include/asm-generic/posix_types.h \
-  /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
-  /usr/include/asm-generic/bitsperlong.h \
-  /usr/local/include/CppLinuxSerial/Exception.hpp \
+  /usr/include/c++/11/mutex \
+  /usr/include/c++/11/bits/std_mutex.h \
+  /usr/include/c++/11/bits/unique_lock.h \
   /home/kanken/code/AHRS_core/src/threadweaver/threadweaver.hpp \
   /usr/include/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
@@ -260,10 +240,13 @@ CMakeFiles/thermix.dir/Factory.cpp.o: Factory.cpp \
   /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
   /usr/include/libintl.h \
+  /usr/include/c++/11/bits/codecvt.h \
   /usr/include/c++/11/bits/locale_facets_nonio.tcc \
   /usr/include/c++/11/bits/locale_conv.h \
   /usr/include/c++/11/iomanip \
   /usr/include/c++/11/bits/quoted_string.h \
+  /usr/include/c++/11/sstream \
+  /usr/include/c++/11/bits/sstream.tcc \
   /usr/include/c++/11/codecvt \
   /usr/include/c++/11/ext/concurrence.h \
   /usr/include/c++/11/bits/shared_ptr.h \
@@ -277,6 +260,27 @@ CMakeFiles/thermix.dir/Factory.cpp.o: Factory.cpp \
   /usr/include/c++/11/bits/stl_list.h \
   /usr/include/c++/11/bits/list.tcc \
   /home/kanken/code/AHRS_core/src/model/patterns/observer/observer.hpp \
+  /home/kanken/code/AHRS_core/src/model/hardware/hw/inputKeys.hpp \
+  /usr/local/include/CppLinuxSerial/SerialPort.hpp \
+  /usr/include/c++/11/fstream \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
+  /usr/include/c++/11/bits/fstream.tcc \
+  /usr/include/x86_64-linux-gnu/asm/ioctls.h \
+  /usr/include/asm-generic/ioctls.h \
+  /usr/include/linux/ioctl.h \
+  /usr/include/x86_64-linux-gnu/asm/ioctl.h \
+  /usr/include/asm-generic/ioctl.h \
+  /usr/include/x86_64-linux-gnu/asm/termbits.h \
+  /usr/include/asm-generic/termbits.h \
+  /usr/include/linux/posix_types.h \
+  /usr/include/linux/stddef.h \
+  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
+  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
+  /usr/include/asm-generic/posix_types.h \
+  /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
+  /usr/include/asm-generic/bitsperlong.h \
+  /usr/local/include/CppLinuxSerial/Exception.hpp \
   /usr/include/c++/11/iterator \
   /usr/include/c++/11/bits/stream_iterator.h \
   /usr/include/c++/11/algorithm \
@@ -296,9 +300,6 @@ CMakeFiles/thermix.dir/Factory.cpp.o: Factory.cpp \
   /usr/include/c++/11/pstl/execution_defs.h \
   ThermxRenderer.hpp \
   /home/kanken/code/AHRS_core/src/pipeline/abstract/pipelineNode.hpp \
-  /usr/include/c++/11/mutex \
-  /usr/include/c++/11/bits/std_mutex.h \
-  /usr/include/c++/11/bits/unique_lock.h \
   /usr/local/include/opencv4/opencv2/core.hpp \
   /usr/local/include/opencv4/opencv2/core/cvdef.h \
   /usr/local/include/opencv4/opencv2/core/version.hpp \
@@ -643,7 +644,7 @@ CMakeFiles/thermix.dir/Factory.cpp.o: Factory.cpp \
   /usr/include/c++/11/typeindex \
   /home/kanken/code/AHRS_core/src/model/controllers/ui/menu.hpp \
   /home/kanken/code/AHRS_core/src/model/controllers/ui/menuItem.hpp \
-  /home/kanken/code/AHRS_core/src/model/hardware/hw/serial.hpp \
+  /home/kanken/code/AHRS_core/src/model/hardware/hw/inputManager.hpp \
   /home/kanken/code/AHRS_core/src/model/hardware/psvr/_psvr.hpp \
   /home/kanken/code/AHRS_core/src/model/hardware/ihidapi/_hidapi.hpp \
   /usr/local/include/hidapi/hidapi.h \
@@ -850,7 +851,7 @@ CMakeFiles/thermix.dir/ThermxController.cpp.o: ThermxController.cpp \
   /usr/include/c++/11/atomic \
   /usr/include/c++/11/bits/atomic_base.h \
   /usr/include/c++/11/bits/atomic_lockfree_defines.h \
-  /home/kanken/code/AHRS_core/src/model/hardware/hw/serial.hpp \
+  /home/kanken/code/AHRS_core/src/model/hardware/hw/inputManager.hpp \
   /usr/include/string.h \
   /usr/include/strings.h \
   /usr/include/c++/11/thread \
@@ -868,29 +869,9 @@ CMakeFiles/thermix.dir/ThermxController.cpp.o: ThermxController.cpp \
   /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/vector.tcc \
-  /usr/local/include/CppLinuxSerial/SerialPort.hpp \
-  /usr/include/c++/11/fstream \
-  /usr/include/c++/11/bits/codecvt.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
-  /usr/include/c++/11/bits/fstream.tcc \
-  /usr/include/c++/11/sstream \
-  /usr/include/c++/11/bits/sstream.tcc \
-  /usr/include/x86_64-linux-gnu/asm/ioctls.h \
-  /usr/include/asm-generic/ioctls.h \
-  /usr/include/linux/ioctl.h \
-  /usr/include/x86_64-linux-gnu/asm/ioctl.h \
-  /usr/include/asm-generic/ioctl.h \
-  /usr/include/x86_64-linux-gnu/asm/termbits.h \
-  /usr/include/asm-generic/termbits.h \
-  /usr/include/linux/posix_types.h \
-  /usr/include/linux/stddef.h \
-  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
-  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
-  /usr/include/asm-generic/posix_types.h \
-  /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
-  /usr/include/asm-generic/bitsperlong.h \
-  /usr/local/include/CppLinuxSerial/Exception.hpp \
+  /usr/include/c++/11/mutex \
+  /usr/include/c++/11/bits/std_mutex.h \
+  /usr/include/c++/11/bits/unique_lock.h \
   /home/kanken/code/AHRS_core/src/threadweaver/threadweaver.hpp \
   /usr/include/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
@@ -908,10 +889,13 @@ CMakeFiles/thermix.dir/ThermxController.cpp.o: ThermxController.cpp \
   /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
   /usr/include/libintl.h \
+  /usr/include/c++/11/bits/codecvt.h \
   /usr/include/c++/11/bits/locale_facets_nonio.tcc \
   /usr/include/c++/11/bits/locale_conv.h \
   /usr/include/c++/11/iomanip \
   /usr/include/c++/11/bits/quoted_string.h \
+  /usr/include/c++/11/sstream \
+  /usr/include/c++/11/bits/sstream.tcc \
   /usr/include/c++/11/codecvt \
   /usr/include/c++/11/ext/concurrence.h \
   /usr/include/c++/11/bits/shared_ptr.h \
@@ -925,6 +909,27 @@ CMakeFiles/thermix.dir/ThermxController.cpp.o: ThermxController.cpp \
   /usr/include/c++/11/bits/stl_list.h \
   /usr/include/c++/11/bits/list.tcc \
   /home/kanken/code/AHRS_core/src/model/patterns/observer/observer.hpp \
+  /home/kanken/code/AHRS_core/src/model/hardware/hw/inputKeys.hpp \
+  /usr/local/include/CppLinuxSerial/SerialPort.hpp \
+  /usr/include/c++/11/fstream \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
+  /usr/include/c++/11/bits/fstream.tcc \
+  /usr/include/x86_64-linux-gnu/asm/ioctls.h \
+  /usr/include/asm-generic/ioctls.h \
+  /usr/include/linux/ioctl.h \
+  /usr/include/x86_64-linux-gnu/asm/ioctl.h \
+  /usr/include/asm-generic/ioctl.h \
+  /usr/include/x86_64-linux-gnu/asm/termbits.h \
+  /usr/include/asm-generic/termbits.h \
+  /usr/include/linux/posix_types.h \
+  /usr/include/linux/stddef.h \
+  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
+  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
+  /usr/include/asm-generic/posix_types.h \
+  /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
+  /usr/include/asm-generic/bitsperlong.h \
+  /usr/local/include/CppLinuxSerial/Exception.hpp \
   /usr/include/c++/11/iterator \
   /usr/include/c++/11/bits/stream_iterator.h \
   /usr/include/c++/11/algorithm \
@@ -944,9 +949,6 @@ CMakeFiles/thermix.dir/ThermxController.cpp.o: ThermxController.cpp \
   /usr/include/c++/11/pstl/execution_defs.h \
   ThermxRenderer.hpp \
   /home/kanken/code/AHRS_core/src/pipeline/abstract/pipelineNode.hpp \
-  /usr/include/c++/11/mutex \
-  /usr/include/c++/11/bits/std_mutex.h \
-  /usr/include/c++/11/bits/unique_lock.h \
   /usr/local/include/opencv4/opencv2/core.hpp \
   /usr/local/include/opencv4/opencv2/core/cvdef.h \
   /usr/local/include/opencv4/opencv2/core/version.hpp \
@@ -1291,7 +1293,7 @@ CMakeFiles/thermix.dir/ThermxController.cpp.o: ThermxController.cpp \
   /usr/include/c++/11/typeindex \
   /home/kanken/code/AHRS_core/src/model/controllers/ui/menu.hpp \
   /home/kanken/code/AHRS_core/src/model/controllers/ui/menuItem.hpp \
-  /home/kanken/code/AHRS_core/src/model/hardware/hw/serial.hpp \
+  /home/kanken/code/AHRS_core/src/model/hardware/hw/inputManager.hpp \
   /home/kanken/code/AHRS_core/src/model/hardware/psvr/_psvr.hpp \
   /home/kanken/code/AHRS_core/src/model/hardware/ihidapi/_hidapi.hpp \
   /usr/local/include/hidapi/hidapi.h \
@@ -1911,29 +1913,10 @@ CMakeFiles/thermix.dir/ThermxRenderer.cpp.o: ThermxRenderer.cpp \
   /usr/include/c++/11/typeindex \
   /home/kanken/code/AHRS_core/src/model/controllers/ui/menu.hpp \
   /home/kanken/code/AHRS_core/src/model/controllers/ui/menuItem.hpp \
-  /home/kanken/code/AHRS_core/src/model/hardware/hw/serial.hpp \
-  /usr/local/include/CppLinuxSerial/SerialPort.hpp \
-  /usr/include/c++/11/fstream \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
-  /usr/include/c++/11/bits/fstream.tcc \
-  /usr/include/x86_64-linux-gnu/asm/ioctls.h \
-  /usr/include/asm-generic/ioctls.h \
-  /usr/include/linux/ioctl.h \
-  /usr/include/x86_64-linux-gnu/asm/ioctl.h \
-  /usr/include/asm-generic/ioctl.h \
-  /usr/include/x86_64-linux-gnu/asm/termbits.h \
-  /usr/include/asm-generic/termbits.h \
-  /usr/include/linux/posix_types.h \
-  /usr/include/linux/stddef.h \
-  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
-  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
-  /usr/include/asm-generic/posix_types.h \
-  /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
-  /usr/include/asm-generic/bitsperlong.h \
-  /usr/local/include/CppLinuxSerial/Exception.hpp \
+  /home/kanken/code/AHRS_core/src/model/hardware/hw/inputManager.hpp \
   /home/kanken/code/AHRS_core/src/model/patterns/observer/observable.hpp \
   /home/kanken/code/AHRS_core/src/model/patterns/observer/observer.hpp \
+  /home/kanken/code/AHRS_core/src/model/hardware/hw/inputKeys.hpp \
   /home/kanken/code/AHRS_core/src/model/hardware/psvr/_psvr.hpp \
   /home/kanken/code/AHRS_core/src/model/hardware/ihidapi/_hidapi.hpp \
   /usr/local/include/hidapi/hidapi.h \
@@ -2058,6 +2041,22 @@ ThermxController.cpp:
 
 /usr/local/include/opencv4/opencv2/flann/defines.h:
 
+/usr/include/c++/11/bits/stl_list.h:
+
+/usr/include/c++/11/pstl/glue_memory_impl.h:
+
+/usr/include/c++/11/sstream:
+
+/usr/include/c++/11/bits/quoted_string.h:
+
+/usr/include/c++/11/bits/locale_conv.h:
+
+ThermxRenderer.hpp:
+
+/usr/local/include/opencv4/opencv2/core/cuda.inl.hpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/immintrin.h:
+
 /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h:
 
 /usr/include/c++/11/bits/fs_fwd.h:
@@ -2076,6 +2075,8 @@ ThermxController.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
 
+/usr/include/time.h:
+
 /usr/local/include/opencv4/opencv2/core/ocl.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/environments.h:
@@ -2088,41 +2089,9 @@ ThermxController.cpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512bwintrin.h:
 
-/usr/include/asm-generic/bitsperlong.h:
+/usr/include/c++/11/bits/unique_lock.h:
 
-/usr/include/x86_64-linux-gnu/asm/posix_types.h:
-
-/usr/include/linux/posix_types.h:
-
-/usr/include/c++/11/bits/unordered_map.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/tmmintrin.h:
-
-/usr/include/x86_64-linux-gnu/asm/termbits.h:
-
-/usr/include/oneapi/tbb/tbb_allocator.h:
-
-/usr/include/linux/ioctl.h:
-
-/home/kanken/code/AHRS_core/src/model/hardware/ihidapi/_hidapi.hpp:
-
-/usr/include/c++/11/bits/stl_tempbuf.h:
-
-/usr/include/GL/glext.h:
-
-/usr/include/asm-generic/ioctls.h:
-
-/usr/include/c++/11/sstream:
-
-/usr/include/c++/11/bits/fstream.tcc:
-
-/usr/include/asm-generic/posix_types.h:
-
-/usr/include/c++/11/pstl/glue_algorithm_impl.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h:
+/usr/include/c++/11/bits/uses_allocator.h:
 
 /usr/include/c++/11/bits/vector.tcc:
 
@@ -2131,8 +2100,6 @@ ThermxController.cpp:
 /usr/local/include/opencv4/opencv2/objdetect/detection_based_tracker.hpp:
 
 /usr/local/include/opencv4/opencv2/core/operations.hpp:
-
-/usr/include/c++/11/vector:
 
 /usr/include/c++/11/bits/parse_numbers.h:
 
@@ -2148,9 +2115,7 @@ ThermxController.cpp:
 
 /usr/include/c++/11/bits/std_thread.h:
 
-/usr/include/time.h:
-
-/usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
+/home/kanken/code/AHRS_core/src/model/hardware/hw/inputManager.hpp:
 
 /usr/include/c++/11/bits/erase_if.h:
 
@@ -2164,13 +2129,17 @@ ThermxController.cpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/avx2intrin.h:
 
-/usr/include/c++/11/bits/uses_allocator.h:
+/home/kanken/code/AHRS_core/src/model/patterns/observer/observable.hpp:
 
-/usr/include/c++/11/bits/unique_lock.h:
+/usr/include/c++/11/array:
 
 /usr/include/limits.h:
 
 /usr/include/c++/11/bits/regex_compiler.tcc:
+
+/usr/include/x86_64-linux-gnu/asm/termbits.h:
+
+/usr/include/oneapi/tbb/tbb_allocator.h:
 
 /usr/local/include/opencv4/opencv2/core/cuda_types.hpp:
 
@@ -2201,6 +2170,10 @@ ThermxController.cpp:
 /usr/include/c++/11/cwctype:
 
 /usr/include/c++/11/bits/exception.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h:
+
+/usr/include/c++/11/bits/basic_ios.h:
 
 /usr/include/c++/11/bits/uniform_int_dist.h:
 
@@ -2268,6 +2241,8 @@ ThermxController.cpp:
 
 /usr/include/c++/11/bits/fs_path.h:
 
+/usr/include/c++/11/bits/shared_ptr.h:
+
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
@@ -2275,10 +2250,6 @@ ThermxController.cpp:
 /usr/include/stdlib.h:
 
 /usr/include/c++/11/bits/functional_hash.h:
-
-/usr/include/asm-generic/ioctl.h:
-
-/usr/include/c++/11/bits/shared_ptr.h:
 
 /usr/include/errno.h:
 
@@ -2300,6 +2271,8 @@ ThermxController.cpp:
 
 /usr/include/c++/11/streambuf:
 
+/usr/include/asm-generic/bitsperlong.h:
+
 /usr/include/x86_64-linux-gnu/bits/getopt_core.h:
 
 /usr/include/c++/11/bits/functexcept.h:
@@ -2307,6 +2280,12 @@ ThermxController.cpp:
 /usr/local/include/opencv4/opencv2/imgproc.hpp:
 
 /usr/include/c++/11/bits/string_view.tcc:
+
+/usr/include/c++/11/bits/exception_defines.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/lwpintrin.h:
+
+/usr/include/oneapi/tbb/task.h:
 
 /usr/include/c++/11/bits/hash_bytes.h:
 
@@ -2317,6 +2296,12 @@ ThermxController.cpp:
 /usr/include/oneapi/tbb/detail/_exception.h:
 
 /usr/include/x86_64-linux-gnu/bits/cpu-set.h:
+
+/usr/include/c++/11/bits/uses_allocator_args.h:
+
+/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
+
+/usr/include/c++/11/ext/string_conversions.h:
 
 /usr/include/c++/11/bits/regex_automaton.tcc:
 
@@ -2372,6 +2357,10 @@ ThermxController.cpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vpopcntdqvlintrin.h:
 
+/usr/include/c++/11/bits/std_mutex.h:
+
+/usr/include/c++/11/tr1/poly_laguerre.tcc:
+
 /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
@@ -2417,10 +2406,6 @@ ThermxController.cpp:
 /usr/local/include/opencv4/opencv2/videoio/legacy/constants_c.h:
 
 /usr/include/c++/11/pstl/parallel_impl.h:
-
-/usr/local/include/CppLinuxSerial/Exception.hpp:
-
-/usr/include/c++/11/bits/unique_ptr.h:
 
 /usr/include/c++/11/ostream:
 
@@ -2472,10 +2457,6 @@ Factory.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
 
-/usr/include/x86_64-linux-gnu/asm/bitsperlong.h:
-
-/usr/include/c++/11/backward/binders.h:
-
 /usr/include/x86_64-linux-gnu/bits/setjmp.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
@@ -2487,10 +2468,6 @@ Factory.cpp:
 /usr/include/c++/11/bits/memoryfwd.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/prfchwintrin.h:
-
-/usr/local/include/CppLinuxSerial/SerialPort.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
 /usr/include/c++/11/type_traits:
 
@@ -2507,10 +2484,6 @@ Factory.cpp:
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h:
-
-/usr/include/x86_64-linux-gnu/asm/ioctls.h:
-
-/usr/include/c++/11/tr1/exp_integral.tcc:
 
 /usr/include/c++/11/bits/stl_multimap.h:
 
@@ -2686,6 +2659,8 @@ ThermxRenderer.cpp:
 
 /usr/include/c++/11/bits/ios_base.h:
 
+/usr/include/c++/11/ext/concurrence.h:
+
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h:
 
 /usr/local/include/opencv4/opencv2/flann/sampling.h:
@@ -2695,6 +2670,8 @@ ThermxRenderer.cpp:
 /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vlbwintrin.h:
 
 /usr/include/pthread.h:
+
+/usr/include/c++/11/bits/locale_facets_nonio.tcc:
 
 /usr/include/c++/11/bits/stl_pair.h:
 
@@ -2706,15 +2683,17 @@ ThermxRenderer.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/select.h:
 
-/usr/local/include/opencv4/opencv2/core/affine.hpp:
-
-/usr/include/c++/11/bits/std_function.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
+/usr/include/c++/11/mutex:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
 
 /usr/include/c++/11/ext/new_allocator.h:
+
+/usr/include/c++/11/bits/char_traits.h:
+
+/usr/include/libintl.h:
+
+/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
 
 /usr/include/c++/11/bits/locale_facets.h:
 
@@ -2726,63 +2705,75 @@ ThermxRenderer.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
 
-/usr/include/c++/11/fstream:
+/home/kanken/code/AHRS_core/src/threadweaver/debugging.hpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/fxsrintrin.h:
 
-/usr/include/c++/11/bits/basic_ios.h:
+/usr/include/c++/11/backward/binders.h:
 
-/usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h:
-
-ThermxRenderer.hpp:
-
-/usr/local/include/opencv4/opencv2/core/cuda.inl.hpp:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/immintrin.h:
-
-/usr/include/c++/11/bits/char_traits.h:
-
-/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
-
-/usr/include/libintl.h:
-
-/usr/include/c++/11/bits/locale_facets_nonio.tcc:
-
-/usr/include/c++/11/bits/locale_conv.h:
-
-/usr/include/c++/11/bits/quoted_string.h:
-
-/usr/include/c++/11/ext/concurrence.h:
-
-/usr/include/c++/11/bits/exception_defines.h:
-
-/usr/include/oneapi/tbb/task.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/lwpintrin.h:
-
-/usr/include/oneapi/tbb/partitioner.h:
-
-/usr/include/c++/11/bits/fs_ops.h:
-
-/usr/include/c++/11/pstl/glue_memory_impl.h:
-
-/home/kanken/code/AHRS_core/src/threadweaver/debugging.hpp:
-
-/usr/include/c++/11/array:
-
-/home/kanken/code/AHRS_core/src/model/patterns/observer/observable.hpp:
-
-/usr/include/c++/11/bits/uses_allocator_args.h:
-
-/usr/include/c++/11/bits/stl_list.h:
-
-/usr/include/c++/11/ext/string_conversions.h:
-
-/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
+/usr/include/x86_64-linux-gnu/asm/bitsperlong.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h:
 
 /usr/include/c++/11/bits/list.tcc:
+
+/usr/include/c++/11/vector:
+
+/home/kanken/code/AHRS_core/src/model/hardware/hw/inputKeys.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
+
+/usr/local/include/CppLinuxSerial/SerialPort.hpp:
+
+/usr/include/c++/11/fstream:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h:
+
+/usr/include/c++/11/bits/fs_ops.h:
+
+/usr/include/oneapi/tbb/partitioner.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h:
+
+/usr/include/c++/11/bits/fstream.tcc:
+
+/usr/include/asm-generic/posix_types.h:
+
+/usr/include/c++/11/pstl/glue_algorithm_impl.h:
+
+/usr/include/x86_64-linux-gnu/asm/ioctls.h:
+
+/usr/include/c++/11/tr1/exp_integral.tcc:
+
+/usr/include/GL/glext.h:
+
+/usr/include/asm-generic/ioctls.h:
+
+/usr/include/linux/ioctl.h:
+
+/home/kanken/code/AHRS_core/src/model/hardware/ihidapi/_hidapi.hpp:
+
+/usr/include/c++/11/bits/stl_tempbuf.h:
+
+/usr/local/include/opencv4/opencv2/core/affine.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
+
+/usr/include/c++/11/bits/std_function.h:
+
+/usr/include/asm-generic/ioctl.h:
+
+/usr/include/c++/11/bits/unordered_map.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/tmmintrin.h:
+
+/usr/include/linux/posix_types.h:
+
+/usr/include/x86_64-linux-gnu/asm/posix_types.h:
+
+/usr/include/c++/11/bits/unique_ptr.h:
+
+/usr/local/include/CppLinuxSerial/Exception.hpp:
 
 /usr/include/c++/11/algorithm:
 
@@ -2791,6 +2782,12 @@ ThermxRenderer.hpp:
 /usr/include/string.h:
 
 /usr/include/tbb/parallel_invoke.h:
+
+/usr/local/include/opencv4/opencv2/flann/miniflann.hpp:
+
+/usr/include/c++/11/bits/cxxabi_forced.h:
+
+/usr/include/c++/11/bits/algorithmfwd.h:
 
 /usr/include/x86_64-linux-gnu/bits/fp-fast.h:
 
@@ -2805,12 +2802,6 @@ ThermxRenderer.hpp:
 /home/kanken/code/AHRS_core/src/pipeline/abstract/pipelineNode.hpp:
 
 /usr/include/c++/11/pstl/glue_memory_defs.h:
-
-/usr/include/c++/11/mutex:
-
-/usr/include/c++/11/bits/std_mutex.h:
-
-/usr/include/c++/11/tr1/poly_laguerre.tcc:
 
 /usr/local/include/opencv4/opencv2/core.hpp:
 
@@ -2859,6 +2850,8 @@ ThermxRenderer.hpp:
 /usr/include/x86_64-linux-gnu/bits/local_lim.h:
 
 /usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
+
+/usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
 
 /usr/local/include/opencv4/opencv2/core/cvstd.hpp:
 
@@ -3046,8 +3039,6 @@ ThermxRenderer.hpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/rtmintrin.h:
 
-/home/kanken/code/AHRS_core/src/model/hardware/hw/serial.hpp:
-
 /usr/lib/gcc/x86_64-linux-gnu/11/include/serializeintrin.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/tsxldtrkintrin.h:
@@ -3149,12 +3140,6 @@ ThermxRenderer.hpp:
 /usr/include/c++/11/bits/streambuf_iterator.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vp2intersectvlintrin.h:
-
-/usr/include/c++/11/bits/cxxabi_forced.h:
-
-/usr/include/c++/11/bits/algorithmfwd.h:
-
-/usr/local/include/opencv4/opencv2/flann/miniflann.hpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/shaintrin.h:
 

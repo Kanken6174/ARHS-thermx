@@ -17,7 +17,7 @@ class ThermxController : public SerialDevice{
 
         void doPortWork() override{
             getData();
-            }
+        }
 
         void getData();
 };
