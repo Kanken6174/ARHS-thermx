@@ -13,7 +13,11 @@ std::vector<std::string> split(std::string str, std::string c){
 }
 
 void ThermxController::getData(){
-    if(!this->enabled || serialPort == nullptr) return;
+    if(!this->enabled || serialPort == nullptr){
+        _trx->enabled = false;
+        return;
+    }
+    _trx->enabled = true;
     std::string s;
     if(!(serialPort->GetState() == mn::CppLinuxSerial::State::OPEN)){
         //std::cout << "port was closed, opening..." <<std::endl;
